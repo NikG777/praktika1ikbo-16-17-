@@ -1,4 +1,4 @@
-/////// Класс мяч ///////
+/////// Class Ball ///////
 Ball.java
 
 import java.lang.*;
@@ -51,7 +51,7 @@ public class Ball
     }
 }
 
-// Тестирование класса Ball
+// Test Ball
 TestBall.java
 
 import java.lang.*;
@@ -80,7 +80,7 @@ public class TestBall {
 }
 
 
-///////// Класс книга ////////
+///////// Class Book ////////
 Book.java
 
 import java.lang.*;
@@ -143,7 +143,7 @@ public class Book
     }
 }
 
-// Тестирование класса книга 
+// Test Book 
 TestBook.java
 
 import java.lang.*;
