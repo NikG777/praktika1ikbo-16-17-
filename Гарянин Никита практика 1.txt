@@ -1,0 +1,172 @@
+/////// Класс мяч ///////
+Ball.java
+
+import java.lang.*;
+public class Ball
+{
+    private String name;
+    private double radius;
+    private String color;
+
+    public Ball()
+    {
+        color = "";
+        radius = 0;
+        name = "";
+    }
+    public Ball(String _name)
+    {
+       name = _name;
+    }
+    public Ball (double radius)
+    {
+        this.radius = radius;
+    }
+    public Ball(double _radius, String _color, String _name){
+        radius = _radius;
+        color = _color;
+        name = _name;
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setRadius(double radius){
+        this.radius = radius ;
+    }
+    public String getColor(){
+        return color;
+    }
+    public double getRadius(){
+        return radius;
+    }
+    public String getName(){
+        return name;
+    }
+    public void getInfo()
+    {
+        System.out.println("Name of the ball " + name + " radius: " + radius + " color: " + color);
+    }
+}
+
+// Тестирование класса Ball
+TestBall.java
+
+import java.lang.*;
+public class TestBall {
+    public static void main(String[] args)
+    {
+
+        // Create first ball
+        Ball ball = new Ball(15);
+        ball.setColor("green");
+        ball.setName("N1");
+        ball.getInfo();
+
+        // Create second ball
+        Ball ball1 = new Ball(14, "blue", "N2");
+        ball1.getInfo();
+
+        // Create third ball
+        Ball ball2 = new Ball();
+        ball2.setRadius(3);
+        ball2.setColor("black");
+        ball2.setName("N3");
+        ball2.getInfo();
+
+    }
+}
+
+
+///////// Класс книга ////////
+Book.java
+
+import java.lang.*;
+public class Book
+{
+   private String name;
+   private int pages;
+   private String author;
+
+    public Book ()
+    {
+        name = "";
+        pages = 0;
+        author = "";
+    }
+    public Book (String _Name)
+    {
+        name = _Name;
+        author = "";
+        pages = 0;
+    }
+    public Book (String _name,String _author, int _numbers)
+    {
+        name = _name;
+        author = _author;
+        pages = _numbers;
+    }
+    public void setName (String name)
+    {
+        this.name = name;
+
+    }
+    public void setAuthor(String author)
+    {
+        this.author = author;
+    }
+    public void setPages(int pages)
+    {
+        this.pages = pages;
+    }
+     public String getAuthor()
+     {
+         return author;
+     }
+    public String getName()
+    {
+        return name;
+    }
+    public int getPages()
+    {
+        return pages;
+    }
+    public String toString(){
+        return this.name+", age "+this.pages;
+    }
+
+    public void getInfo()
+    {
+        System.out.println(name+" - name of the book, " + pages + " pages, " + author+" author of the book.");
+    }
+}
+
+// Тестирование класса книга 
+TestBook.java
+
+import java.lang.*;
+public class TestBook
+{
+    public static void main(String[] args)
+    {
+        // Create first book
+        Book book1 = new Book("Unity","Adam", 600);
+
+        // Create second book
+        Book book2 = new Book("Poems");
+        book2.setPages(777);
+        book2.setAuthor("Pushkin");
+
+        // Create third book
+        Book book3 = new Book();
+        book3.setName("C++");
+        book3.setAuthor("Shield");
+        book3.setPages(1200);
+
+        book1.getInfo();
+        book2.getInfo();
+        book3.getInfo();
+    }
+}
