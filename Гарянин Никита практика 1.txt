@@ -14,9 +14,9 @@ public class Ball
         radius = 0;
         name = "";
     }
-    public Ball(String _name)
+    public Ball(String name)
     {
-       name = _name;
+       this.name = name;
     }
     public Ball (double radius)
     {
@@ -96,9 +96,9 @@ public class Book
         pages = 0;
         author = "";
     }
-    public Book (String _Name)
+    public Book (String _name)
     {
-        name = _Name;
+        name = _name;
         author = "";
         pages = 0;
     }
