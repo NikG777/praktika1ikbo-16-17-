@@ -96,17 +96,17 @@ public class Book
         pages = 0;
         author = "";
     }
-    public Book (String _name)
+    public Book (String name)
     {
-        name = _name;
+        this.name = name;
         author = "";
         pages = 0;
     }
-    public Book (String _name,String _author, int _numbers)
+    public Book (String name,String author, int numbers)
     {
-        name = _name;
-        author = _author;
-        pages = _numbers;
+        this.name = name;
+        this.author = author;
+        this.pages = numbers;
     }
     public void setName (String name)
     {
